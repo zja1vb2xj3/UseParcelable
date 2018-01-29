@@ -28,7 +28,7 @@ public class MainActivity extends Activity {
         ArrayList<ModelParcelable> modelParcelables = new ArrayList<>();
 
         for(int i=0; i<10; i++) {
-            modelParcelables.add(new ModelParcelable("제목" + String.valueOf(i), "내용" + String.valueOf(i)));
+            modelParcelables.add(new ModelParcelable("model"+String.valueOf(i), "content"+String.valueOf(i)));
         }
 
         bundle.putParcelableArrayList("list", modelParcelables);
